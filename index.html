@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaunel's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
     <nav id="desktop-nav">
@@ -101,8 +103,10 @@
                 <p>Software Engineer Intern</p>
                 <p>May - August 2023</p>
                 <br/>
-                <p>Created an automated script using Python incorporated with the Jenkins platform to optimize 
-                    production from an hour a week to 30 seconds.</p>
+                <p>Created an automated script using Python incorporated with the Jenkins platform. </p>
+                <ul>
+                    <li>Optimized production from an hour a week to 30 seconds.</li>
+                </ul>
             </div>
     </section>
 
@@ -133,7 +137,7 @@
     <section class="projects" id="projects">
         <h1>Projects</h1>
 
-        <div class="projects-container">
+        <div class="projects-container" id="projects-container">
             <div class="projects-card">
                 <h2><strong>Home 4 You</strong></h2>
                 <p>Python, React, Javascript, Google API(Maps), FastAPI</p>
@@ -168,6 +172,9 @@
                     <li>Designed at the end of a Web Development Bootcamp taught by a Google Software Engineer.</li>
                 </ul>
             </div>
+             <div class="pagination" id="pagination">
+                
+             </div>
 
         </div>
 
@@ -175,22 +182,40 @@
     </section>
 
     <section class="contact" id="contact">
-        <h1>Contact</h1>
-        <a href="mailto:pantonjaunel@gmail.com"><button class="email-button">Email</button></a>
+        <h1>Contact Me</h1>
+        <p>Let's Connect!</p>
 
-        <a href="https://www.linkedin.com/in/jaunel-panton" target="_blank">
-            <button class="linkedin-button">LinkedIn</button>
-        </a>
+        <section class="contact-info">
 
-        <a href="https://github.com/japan14" target="_blank">
-            <button class="github-button">GitHub</button>
-        </a>
+            <form class="contact-form" id="contactForm">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="text" name="mail" placeholder="Your Email">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit" name="submit">Send</button>
+            </form>
+
+            <div class="social-buttons">
+                <a href="mailto:pantonjaunel@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+
+                <a href="https://www.linkedin.com/in/jaunel-panton" class="social-icon" target="_blank">
+                     <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/japan14" class="social-icon" target="_blank">
+                   <i class="fab fa-github"></i>
+                </a>
+            </div>
+            
+        </section>
+
     </section>
 
     <footer>
         <p>&copy; 2025 Jaunel Panton</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
